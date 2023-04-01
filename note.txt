@@ -1,0 +1,13 @@
+các thẻ html hay dùng : 
+1. h1 -> h6
+a. khái niệm: là thẻ tiêu đề heading
+b. tính chất : in đậm
+              có kích thước nhỏ dần từ h1 đến h6 
+              có dãn cách khác giữa các dòng
+c. lưu ý:
+- sử dụng thẻ h1 cho những nội dung được đánh dấu là tiêu đề
+- một màn hình website chỉ có duy nhất 1 thẻ h1
+
+2. thẻ p (paragraph)
+b. tính chất:
+- dãn cách trên dưới 

@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <style>
+        .image {
+            position: relative;
+            height: 250px;
+            width: 500px;
+        }
+
+        .image img {
+            z-index: 1;
+            height: 250px;
+            width: 500px;
+        }
+
+        .image a {
+            position: absolute;
+            z-index: 2;
+            right: 5px;
+            bottom: 5px;
+            border: 1px;
+            background-color: red;
+            border-radius: 5px;
+            width: 156px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            color: aliceblue;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .content {
+            position: relative;
+            height: 250px;
+            width: 500px;
+            background-color: black;
+        }
+
+        .content img {
+            z-index: 1;
+            height: 100%;
+            width: 80%;
+            margin: 0 50px;
+        }
+
+        #link {
+            position: absolute;
+            z-index: 2;
+            right: 35%;
+            bottom: 40%;
+            display: none;
+            border: 1px;
+            background-color: blue;
+            border-radius: 5px;
+            width: 174px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            color: aliceblue;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .content:hover #link {
+            display: block;
+            
+        }
+
+        .content:hover img {
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>Bài tập 1: </h2>
+    <p>Tạo một khung ảnh 500x250</p>
+    <p>Chọn 1 ảnh bất kì, cho ảnh nằm full khung ảnh theo dạng cover</p>
+    <p>Tạo một nút shop mỏe màu đỏ, 156x64, bo góc 5px</p>
+    <p>Nút nằm cách lề dưới 5px, lề phải px như hình</p>
+    <div class="image">
+        <img src="mon_neo.png" alt="a">
+        <a href="#">Show more</a>
+    </div>
+
+    <h2>Bài tập 2:</h2>
+    <p>Tạo một khung ảnh 500x250</p>
+    <p>Chọn 1 ảnh bất kì, cho ảnh nằm full khung ảnh theo dạng contain như hình, phần thừa tô màu đen</p>
+    <p>Khi hover ảnh sẽ tối đi và hiện ra một nút nư hình với kích thước 174x46</p>
+    <p>Hiệu ứng kéo dài 0.5s khi hover và hover out</p>
+    <div class="content">
+        <img src="mon_neo.png" alt="a">
+        <a href="#" id="link">Xem chi tiết</a>
+    </div>
+    
+</body>
+
+</html>
